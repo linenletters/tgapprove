@@ -2,7 +2,7 @@ import os, time, requests
 
 T = os.environ["TG_JOIN_BOT_TOKEN"]
 API = f"https://api.telegram.org/bot{T}/"
-deadline = time.time() + int(os.environ.get("RUN_SECONDS", "285"))
+deadline = time.time() + int(os.environ.get("RUN_SECONDS", "21300"))
 
 
 def call(method, **params):
